@@ -8,7 +8,8 @@ class ListStavkeComponent extends Component {
 
         this.state = {
             id: this.props.match.params.id,
-                stavke: []
+                stavke: [],
+		kolicinaStavke: ''
         };
         
         this.changeKolicinaStavkeHandler = this.changeKolicinaStavkeHandler.bind(this);
@@ -82,8 +83,8 @@ class ListStavkeComponent extends Component {
                                              <td> {stavka.proizvodKolicina}</td>
                                              <td> {stavka.proizvodCena}</td>
                                              <td>
-                                             <input placeholder="KolicinaStavke" name="kolicinaStavke" className="form-control" 
-                                                value={this.state.kolicinaStavke} onChange={this.changeKolicinaStavkeHandler} />
+                                             <input key = {stavka.id} placeholder="KolicinaStavke" name="kolicinaStavke" className="form-control" 
+                                                value={this.state.kolicinaStavke[stavka.is]} onChange={this.changeKolicinaStavkeHandler} />
                                              </td>
                                              <td> {stavka.cenaStavke}</td>
                                              <td> 
