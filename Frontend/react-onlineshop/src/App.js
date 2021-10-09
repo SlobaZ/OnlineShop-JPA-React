@@ -1,5 +1,6 @@
 import './App.css';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {HashRouter,Route, Switch} from 'react-router-dom';
+//import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import HeaderComponent from "./components/HeaderComponent.js";
 import FooterComponent from "./components/FooterComponent.jsx";
 import HomeComponent from "./components/HomeComponent.jsx";
@@ -15,7 +16,7 @@ import ListStavkeComponent from "./components/stavke/ListStavkeComponent.jsx";
 function App() {
   return (
     <div>
-	      <Router>
+	      <HashRouter>
 	        <div className="container">
 	            <HeaderComponent />
 	            <div className="container">
@@ -32,7 +33,7 @@ function App() {
 	            </div>
 	            <FooterComponent />
 	        </div>
-	      </Router>
+	      </HashRouter>
 	    </div>
   );
 }
