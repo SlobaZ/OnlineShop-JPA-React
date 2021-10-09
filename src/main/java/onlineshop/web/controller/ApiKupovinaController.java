@@ -34,7 +34,7 @@ import onlineshop.support.KupovinaDTOToKupovina;
 import onlineshop.support.KupovinaToKupovinaDTO;
 import onlineshop.web.dto.KupovinaDTO;
 
-@CrossOrigin(origins="http://localhost:3000")
+//@CrossOrigin(origins="http://localhost:3000")
 @RestController
 @RequestMapping(value="/kupovine")
 public class ApiKupovinaController {

@@ -29,7 +29,7 @@ import onlineshop.support.KorisnikToKorisnikDTO;
 import onlineshop.web.dto.KorisnikDTO;
 
 
-@CrossOrigin(origins="http://localhost:3000")
+//@CrossOrigin(origins="http://localhost:3000")
 @RestController
 @RequestMapping(value="/korisnici")
 public class ApiKorisnikController {

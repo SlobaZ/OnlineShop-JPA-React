@@ -24,7 +24,7 @@ import onlineshop.support.StavkaToStavkaDTO;
 import onlineshop.web.dto.StavkaDTO;
 
 
-@CrossOrigin(origins="http://localhost:3000")
+//@CrossOrigin(origins="http://localhost:3000")
 @RestController
 @RequestMapping(value="/kupovine/{kupovinaId}/stavke")
 public class ApiStavkaController {

@@ -33,7 +33,7 @@ import onlineshop.support.ProizvodToProizvodDTO;
 import onlineshop.web.dto.ProizvodDTO;
 
 
-@CrossOrigin(origins="http://localhost:3000")
+//@CrossOrigin(origins="http://localhost:3000")
 @RestController
 @RequestMapping(value="/proizvodi")
 public class ApiProizvodController {
